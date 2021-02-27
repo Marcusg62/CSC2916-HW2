@@ -88,6 +88,9 @@ router.route('/signin')
     }
     );
 
+
+    // 
+
 router.route('/movies')
     .delete(authController.isAuthenticated, function(req, res) {
         console.log(req.body);
